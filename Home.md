@@ -11,3 +11,17 @@ Welcome to the wire-pod wiki!
 * The Raspberry Pi Escape Pod images contain compiled `chipper` binaries packed with `upx`. It was easy to run `upx -d` on them and to open them up in a hex editor then to take out the pub/priv key combo. Those certificates are now located in `~repo/chipper/epod`. This is what allows compatibility with production robots running escape pod software.
 
 * The community has also played a huge role in fleshing out wire-pod and making it what it is.
+
+# Vocabulary
+
+* **chipper** - what the voice server itself is called and may be referred to as.
+
+* **vector-cloud** or **vic-cloud** - the program on the robot which makes the request to chipper.
+
+* **intent** - when text is transcribed, the software will match it with a set of words to find out what "intent" best matches what was said, so the bot knows exactly what to do. For instance, "good robot" and similar phrases will end up as "intent_imperative_praise".
+
+* **STT** - speech-to-text
+
+* **production robots** - Vectors that were sold to consumers and were set up like normal.
+
+* **OSKR/dev bots** - Vectors that have been unlocked by Anki, DDL, or by a developer who paid for OSKR (open-source kit for robots).
