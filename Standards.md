@@ -20,7 +20,7 @@ func Action(transcribedText string, botSerial string) string {
 }
 ```
 
-* The plugin should be built with `/usr/local/go/bin/go build -buildmode=plugin plugin.go` (has to be built with the same version of Go wire-pod is using)
+* The plugin should be built with `sudo /usr/local/go/bin/go build -buildmode=plugin plugin.go` (has to be built with the same version of Go wire-pod is using and same user)
 
 * The resulting .so should be placed in `~/wire-pod/chipper/plugins/`. wire-pod will load it upon startup.
 

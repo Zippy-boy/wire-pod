@@ -16,6 +16,8 @@ Welcome to the wire-pod wiki!
 
 * **chipper** - what the voice server itself is called and may be referred to as.
 
+* **SDK** - software development kit. This is also what allows services such as the mobile app to communicate with Vector.
+
 * **vector-cloud** or **vic-cloud** - the program on the robot which makes the request to chipper.
 
 * **intent** - when text is transcribed, the software will match it with a set of words to find out what "intent" best matches what was said, so the bot knows exactly what to do. For instance, "good robot" and similar phrases will end up as "intent_imperative_praise".
