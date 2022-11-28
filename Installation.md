@@ -81,7 +81,7 @@ sudo systemctl restart avahi-daemon
 sudo systemctl enable avahi-daemon
 ```
 
-10. At this point, voice commands should work.
+10. At this point, voice commands should work if your bot had been set up previously.
 
 ## Guide 2: Windows 10 or higher
 
