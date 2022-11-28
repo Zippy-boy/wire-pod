@@ -29,7 +29,7 @@ sudo ./setup.sh daemon-disable
 
 # Updating wire-pod
 
-- To update to a newer version of wire-pod, make sure chipper is not running then run the following commands:
+To update to a newer version of wire-pod, make sure chipper is not running then run the following commands:
 
 ```
 cd ~/wire-pod
@@ -38,4 +38,4 @@ cd chipper
 sudo ./start.sh
 ```
 
-- If you have set wire-pod up as a daemon, run `sudo systemctl start wire-pod` rather than `sudo ./start.sh`.
+If you have set wire-pod up as a daemon, run `sudo systemctl start wire-pod` rather than `sudo ./start.sh`.
