@@ -83,11 +83,9 @@ sudo systemctl enable avahi-daemon
 
 10. At this point, voice commands should work.
 
-## Guide Two: Windows 10 or higher
+## Guide 2: Windows 10 or higher
 
-### Windows
-
-- Make sure your installation is fully up to date.
+- NOTE: Make sure your installation is fully up to date.
 
 1. Open up Powershell as administrator
 	-	Open the start menu, type in Powershell, right click, click "Run as administrator"
@@ -114,7 +112,9 @@ wsl --install
 
 9. In Powershell, run the following command. When it asks for a confirmation, enter `Y`.
 
-```Set-ExecutionPolicy Bypass```
+```
+Set-ExecutionPolicy Bypass
+```
 
 10. In Powershell, run the following commands:
 
