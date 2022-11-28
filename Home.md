@@ -1,8 +1,54 @@
 Welcome to the wire-pod wiki!
 
-# What
+***
 
-* `wire-pod` is custom voice server software for the Anki (now Digital Dream Labs) Vector. It is an alternative to the official Escape Pod product and does not require any payment to Digital Dream Labs. It works with OSKR, dev, **and** regular production bots.
+# Wiki Links
+
+* [Installation Guide](./Installation.md)
+
+* [Dev Documentation](./Standards.md)
+
+* [More general tips, guides, and info](./Things-to-Know.md)
+
+***
+
+# What wire-pod is
+
+**wire-pod** is custom voice server software for the Anki (now Digital Dream Labs) Vector robot. It is an alternative to the official Escape Pod product and does not require any payment to Digital Dream Labs nor any connection to their servers. It works with every Vector 1.0, **including ones which haven't been unlocked**.
+
+***
+
+
+# Features
+
+- Every voice command is implemented
+- Weather commands (easy to setup via weatherapi.com or openweathermap.org)
+- Knowledgegraph commands (easy to setup via houndify)
+- Token and jdocs, so a robot can "sign in" to it
+- A robot can sign in to wire-pod without ever touching a DDL server
+- A robot can sign in to wire-pod without needing to clear user data
+- There is a Vector app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
+- It is easy to create your own voice commands via plugins (see [Standards.md](./Standards.md)) and to implement the vector-go-sdk into your plugins
+    - Contrary to popular belief, the vector-go-sdk is fully featured and relatively easy to use
+
+***
+
+# Compatibility
+
+## OS support
+- Linux
+    - Debian (apt)
+    - Arch (pacman)
+    - Fedora (dnf)
+- Windows
+    - Under WSL
+
+## Architecture support
+- x86_64
+- aarch64
+- armhf
+
+***
 
 # How
 
@@ -12,19 +58,7 @@ Welcome to the wire-pod wiki!
 
 * The community has also played a huge role in fleshing out wire-pod and making it what it is.
 
-# Features
-
-* wire-pod is a fully functional escape pod replacement. Every voice command is implemented and it is easy to setup weather commands and knowledge graph ("I have a question") commands.
-
-- Every voice command
-- Weather commands (via weatherapi.com or openweathermap.org)
-- Knowledgegraph commands (via houndify)
-- Token and jdocs, so a robot can "sign in" to it
-- A robot can sign in to wire-pod without ever touching a DDL server
-- A robot can sign in to wire-pod without needing to clear user data
-- There is a Vector app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
-- It is easy to create your own voice commands via plugins (see [Standards.md](/Standards.md)) and to implement the vector-go-sdk into your plugins
-    - Contrary to popular belief, the vector-go-sdk is fully featured and relatively easy to use
+***
 
 # Vocabulary
 
