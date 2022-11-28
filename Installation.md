@@ -2,11 +2,12 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Prerequisites
 * A Vector 1.0
+    - Can be a regular production bot, can also be an OSKR/dev-unlocked one
     - Vector 2.0 is not supported at the moment
-* A computer running Linux (distros with `pacman`, `dnf`, or `apt` are supported). Raspberry Pi OS (64-bit), Ubuntu, and Debian are good choices
-    - Windows may also be used, a guide will exist below soon
+* A computer running Linux or Windows 10/11
+    - Distros with `pacman`, `dnf`, or `apt` are supported. Raspberry Pi OS (64-bit), Ubuntu, and Debian are good choices
 * A device with Bluetooth support
-    - Can be the same machine as above
+    - Can be the same machine as above, doesn't have to be a seperate one
     - A computer running Windows or macOS is preferred
     - An Android phone works too
 * Some command-line knowledge and experience
@@ -14,7 +15,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Preparing the bot (production bots only)
 
-- ***NOTE: This section is for production bots only. If you have an OSKR/dev bot, skip this part.***
+- ***NOTE: This section is for production bots only. If you have an OSKR/dev-unlocked bot, skip this part.***
 
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
 
@@ -25,11 +26,13 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Installing wire-pod
 
-## Linux
+- wire-pod support most Linux distributions and Windows 10/11. Follow one of the following guides, then continue to "Authenticate the bot with wire-pod".
+
+## Guide 1: Linux
 
 1. On the device you would like to install wire-pod on, open a Terminal application
 
-2. Install git via your package manager. On Debian/Ubuntu/Raspberry Pi OS, the command would be `sudo apt -y install git`.
+2. Install git via your package manager. On Debian/Ubuntu/Raspberry Pi OS, the command would be `sudo apt install -y git`.
 
 3. Clone the directory with the following commands.
 
@@ -39,6 +42,7 @@ git clone https://github.com/kercre123/wire-pod
 ```
 
 4. Run setup.sh and follow the directions. Default settings can be used by just hitting enter with no other input on many of the options.
+    - When you get to where it asks whether you want to use an IP address, domain, or escapepod.local, you must choose the 3rd option.
 
 ```
 cd ~/wire-pod
@@ -69,6 +73,8 @@ sudo ./setup.sh scp vectorip /path/to/key
 
 9. If you have a **production** bot you would like to set up with wire-pod, run the following commands in a Terminal application:
 
+* Don't do this if you are here from the Windows guide
+
 ```
 sudo hostnamectl set-hostname escapepod
 sudo systemctl restart avahi-daemon
@@ -76,6 +82,62 @@ sudo systemctl enable avahi-daemon
 ```
 
 10. At this point, voice commands should work.
+
+## Guide Two: Windows 10 or higher
+
+### Windows
+
+- Make sure your installation is fully up to date.
+
+1. Open up Powershell as administrator
+	-	Open the start menu, type in Powershell, right click, click "Run as administrator"
+
+2. Enter the following commands (this will change your computer's name to `escapepod`):
+
+```
+Rename-Computer -NewName "escapepod"
+wsl --install
+```
+
+3. Reboot your computer.
+
+4. When you log in after the reboot, Ubuntu should start install. Wait for it to finish.
+
+5. The Ubuntu installer should ask for a UNIX username. Enter one. example: `wire`
+
+6. It should then ask for a UNIX password. Make sure you remember this! It will not show any indication that you are typing anything, that is normal.
+
+7. You should now be at an Ubuntu terminal. Leave that open in the background.
+
+8. Open up Powershell as administrator
+	-	Open the start menu, type in Powershell, right click the first result, click "Run as administrator"
+
+9. In Powershell, run the following command. When it asks for a confirmation, enter `Y`.
+
+```Set-ExecutionPolicy Bypass```
+
+10. In Powershell, run the following commands:
+
+```
+cd ~
+curl -o wsl-firewall.ps1 https://keriganc.com/wsl-firewall.ps1
+.\wsl-firewall.ps1
+```
+
+11. Return to the Ubuntu terminal window and follow the Linux instructions for installation.
+
+(if it asks for a password, enter what you entered for the UNIX password earlier)
+
+12. Once that is finished, run the following commands to start the server:
+
+```
+cd ~/wire-pod
+sudo ./chipper/start.sh
+```
+
+* NOTE: WSL does not have functional systemd, so you will need to run the above two commands every time you want to start the server. It will not start automatically.
+
+- It should now be setup!
 
 # Authenticate the bot with wire-pod
 
@@ -89,6 +151,6 @@ sudo systemctl enable avahi-daemon
 3. Press "PAIR WITH VECTOR" and follow the instructions
 
 4. You should end up at a screen with an "ACTIVATE" button. Click on it
-    -   If it gets stuck for more than ~15 seconds, refresh the page and try again
+    -   If it gets stuck for more than ~20 seconds, refresh the page and try pairing again
 
 5. Your bot should now be fully authenticated!

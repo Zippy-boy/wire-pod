@@ -12,7 +12,23 @@ Welcome to the wire-pod wiki!
 
 * The community has also played a huge role in fleshing out wire-pod and making it what it is.
 
+# Features
+
+* wire-pod is a fully functional escape pod replacement. Every voice command is implemented and it is easy to setup weather commands and knowledge graph ("I have a question") commands.
+
+- Every voice command
+- Weather commands (via weatherapi.com or openweathermap.org)
+- Knowledgegraph commands (via houndify)
+- Token and jdocs, so a robot can "sign in" to it
+- A robot can sign in to wire-pod without ever touching a DDL server
+- A robot can sign in to wire-pod without needing to clear user data
+- There is a Vector app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
+- It is easy to create your own voice commands via plugins (see [Standards.md](/Standards.md)) and to implement the vector-go-sdk into your plugins
+    - Contrary to popular belief, the vector-go-sdk is fully featured and relatively easy to use
+
 # Vocabulary
+
+* **DDL** - Digital Dream Labs acronym
 
 * **chipper** - what the voice server itself is called and may be referred to as.
 
@@ -26,4 +42,4 @@ Welcome to the wire-pod wiki!
 
 * **production robots** - Vectors that were sold to consumers and were set up like normal.
 
-* **OSKR/dev bots** - Vectors that have been unlocked by Anki, DDL, or by a developer who paid for OSKR (open-source kit for robots).
+* **OSKR/dev-unlocked bots** - Vectors that have been unlocked by Anki, DDL, or by a developer who paid for OSKR (open-source kit for robots).
