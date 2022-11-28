@@ -48,6 +48,8 @@ tni1TRsTRTaNSapjo0Y+Sw==
 
 * There is a built-in speech end detector (VAD). This function is called `detectEndOfSpeech(req)` and should be called in the for loop as well. Its output req should also be set equal to the sttHandler's input req.
 
+* TODO: make a wrapper for SpeechRequest so you don't have to set the req equal to the function outputs
+
 * Example sttHandler function:
 
 ```

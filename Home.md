@@ -22,14 +22,26 @@ Welcome to the wire-pod wiki!
 # Features
 
 - Every voice command is implemented
-- Weather commands (easy to setup via weatherapi.com or openweathermap.org)
-- Knowledgegraph commands (easy to setup via houndify)
-- Token and jdocs, so a robot can "sign in" to it
+- Weather commands are easy to setup via [weatherapi.com](weatherapi.com) or [openweathermap.org](openweathermap.org)
+- Knowledge-graph ("I have a question") commands are easy to setup via houndify
+- Token and jdocs, so a robot can be "signed in" to it
 - A robot can sign in to wire-pod without ever touching a DDL server
-- A robot can sign in to wire-pod without needing to clear user data
-- There is a Vector app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
+- A robot can also sign in to wire-pod without needing to clear user data
+    - There may be some bugs with SDK, you may also need to reauthenticate your bot after every reboot
+- There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
 - It is easy to create your own voice commands via plugins (see [Standards.md](./Standards)) and to implement the vector-go-sdk into your plugins
-    - Contrary to popular belief, the vector-go-sdk is fully featured and relatively easy to use
+    - The vector-go-sdk is fully featured and relatively easy to use
+
+***
+
+# Caveats
+
+- The Vector mobile app cannot work with a bot that has been authenticated with wire-pod.
+- You must use 1.8. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
+    - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
+- Vector 2.0 is not compatible with wire-pod.
+- Authentication with bots which haven't had user data cleared is buggy currently
+    - They may need to be reauthenticated often
 
 ***
 
