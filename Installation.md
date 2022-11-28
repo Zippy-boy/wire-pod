@@ -12,6 +12,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     - An Android phone works too
 * Some command-line knowledge and experience
 
+***
 
 # Preparing the bot (production bots only)
 
@@ -23,6 +24,8 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
 
 3. Follow the directions. The bot should start downloading an update. Once it is done, keep the page open but don't do anything else on the page. Follow the steps below to install wire-pod.
+
+***
 
 # Installing wire-pod
 
@@ -139,6 +142,8 @@ sudo ./chipper/start.sh
 
 - It should now be setup!
 
+***
+
 # Authenticate the bot with wire-pod
 
 -   This isn't totally required, but this will allow you to customize your bot's settings and allow the SDK interface to work.
@@ -151,6 +156,6 @@ sudo ./chipper/start.sh
 3. Press "PAIR WITH VECTOR" and follow the instructions
 
 4. You should end up at a screen with an "ACTIVATE" button. Click on it
-    -   If it gets stuck for more than ~20 seconds, refresh the page and try pairing again
+    -   If it gets stuck loading for more than ~20 seconds, refresh the page and try pairing again
 
-5. Your bot should now be fully authenticated!
+5. Complete! Your bot should now be fully authenticated and set up!
