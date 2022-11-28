@@ -4,11 +4,11 @@ Welcome to the wire-pod wiki!
 
 # Wiki Links
 
-* [Installation Guide](./Installation.md)
+* [Installation Guide](./Installation)
 
-* [Dev Documentation](./Standards.md)
+* [Dev Documentation](./Standards)
 
-* [More general tips, guides, and info](./Things-to-Know.md)
+* [More general tips, guides, and info](./Things-to-Know)
 
 ***
 
@@ -28,7 +28,7 @@ Welcome to the wire-pod wiki!
 - A robot can sign in to wire-pod without ever touching a DDL server
 - A robot can sign in to wire-pod without needing to clear user data
 - There is a Vector app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
-- It is easy to create your own voice commands via plugins (see [Standards.md](./Standards.md)) and to implement the vector-go-sdk into your plugins
+- It is easy to create your own voice commands via plugins (see [Standards.md](./Standards)) and to implement the vector-go-sdk into your plugins
     - Contrary to popular belief, the vector-go-sdk is fully featured and relatively easy to use
 
 ***
