@@ -19,6 +19,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 - ***NOTE: This section is for production bots only. If you have an OSKR/dev-unlocked bot, skip this part.***
 
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
+    - This is NOT the same as clearing user data. This step will not clear user data.
 
 2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-epod-setup](https://keriganc.com/vector-epod-setup).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
@@ -146,16 +147,23 @@ sudo ./chipper/start.sh
 
 # Authenticate the bot with wire-pod
 
--   This isn't totally required, but this will allow you to customize your bot's settings and allow the SDK interface to work.
--   If you have cleared Vector's user data, this step is required.
+-   This isn't required for voice commands to work, but this will allow you to customize your bot's settings and allow the SDK interface to work.
 
-1. Go back to the [vector-epod-setup](https://keriganc.com/vector-epod-setup) page
+1. Clear your bot's user data.
+    - You may skip this step, but if you do you will run into strange bugs.
+    1.  Place Vector on the charger
+    2.  Double press his button
+    3.  Lift his lift up then down
+    4.  Take Vector off of the charger and twist one of the wheels until the cursor is on "CLEAR USER DATA"
+    5.  Lift the lift up then down again
+    6.  Move the wheel until the cursor is on "CONFIRM"
+    7.  Lift the lift up then down again
 
-2. Make sure Vector is on the charger, then double press the back button
+2. Refresh the [vector-epod-setup](https://keriganc.com/vector-epod-setup) page and follow the instructions
 
-3. Press "PAIR WITH VECTOR" and follow the instructions
+3. You should end up at a screen with an "ACTIVATE" button. Click on it.
+    -   If it loads for a little bit then shows back up again, click on it again
 
-4. You should end up at a screen with an "ACTIVATE" button. Click on it
-    -   If it gets stuck loading for more than ~20 seconds, refresh the page and try pairing again
+4. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
-5. Complete! Your bot should now be fully authenticated and set up!
+5. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
