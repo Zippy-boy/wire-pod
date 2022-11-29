@@ -149,8 +149,7 @@ sudo ./chipper/start.sh
 
 -   This isn't required for voice commands to work, but this will allow you to customize your bot's settings and allow the SDK interface to work.
 
-1. Clear your bot's user data.
-    - You may skip this step, but if you do you will run into strange bugs.
+1. Clear your bot's user data. You may skip this step, but if you do you will run into strange bugs.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
