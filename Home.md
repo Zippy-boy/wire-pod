@@ -40,8 +40,7 @@ Welcome to the wire-pod wiki!
 - You must use 1.8. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
     - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
 - Vector 2.0 is not compatible with wire-pod.
-- Authentication with prod bots is functional, but buggy.
-    - This is due to Digital Dream Lab's strange (maybe flawed?) implementation of the escape pod CA cert in vic-cloud. There is a possibility this will be fixed in the future as it affects functionality with the official escape pod as well.
+- Authentication with prod bots is buggy without clearing user data
 
 ***
 
@@ -86,6 +85,6 @@ Welcome to the wire-pod wiki!
 
 * **STT** - speech-to-text
 
-* **production robots** - Vectors that were sold to consumers and were set up like normal.
+* **prod robots** - Vectors that were sold to consumers and were set up like normal. AKA "production" robots
 
 * **OSKR/dev-unlocked bots** - Vectors that have been unlocked by Anki, DDL, or by a developer who paid for OSKR (open-source kit for robots).
