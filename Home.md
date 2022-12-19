@@ -37,10 +37,13 @@ Welcome to the wire-pod wiki!
 # Caveats
 
 - The Vector mobile app cannot work with a bot that has been authenticated with wire-pod.
-- You must use 1.8. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
+    - An alternative, mostly functional web app alternative is available
+- You must use 1.8 if you want to use this with a production bot. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
     - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
 - Vector 2.0 is not compatible with wire-pod.
-- Authentication with prod bots is buggy without clearing user data
+- Authentication with prod bots can be buggy without clearing user data
+- The connection check in CCIS will return a "TLS" error. This does not affect functionality and it is not a big deal 
+    - Making it work to the point of saying "AVAILABLE" would add immense complexion
 
 ***
 
@@ -51,7 +54,7 @@ Welcome to the wire-pod wiki!
     - Debian (apt)
     - Arch (pacman)
     - Fedora (dnf)
-- Windows
+- Windows (experimental)
     - Under WSL
 
 ## Architecture support
