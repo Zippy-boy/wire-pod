@@ -70,6 +70,7 @@ sudo systemctl start wire-pod
 
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod with the following command (replace vectorip with Vector's actual IP address, and /path/to/key with the actual path to the SSH key).
     -  If you are on my software (WireOS), you do not have to provide a key as the script will fetch it itself.
+    -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
 
 ```
 sudo ./setup.sh scp vectorip /path/to/key
@@ -78,6 +79,7 @@ sudo ./setup.sh scp vectorip /path/to/key
 9. If you have a **production** bot you would like to set up with wire-pod, run the following commands in a Terminal application:
 
 * Don't do this if you are here from the Windows guide
+* If you want to set up an OSKR/dev-unlocked bot but chose the escapepod.local option in setup.sh, you must do this as well
 
 ```
 sudo hostnamectl set-hostname escapepod
@@ -146,8 +148,6 @@ sudo ./chipper/start.sh
 ***
 
 # Authenticate the bot with wire-pod
-
--   This isn't required for voice commands to work, but this will allow you to customize your bot's settings and allow the SDK interface to work.
 
 1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot:*** Clear your bot's user data. You may skip this step, but if you do you will run into strange bugs.
     1.  Place Vector on the charger
