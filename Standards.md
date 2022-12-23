@@ -30,12 +30,6 @@ func Action(transcribedText string, botSerial string) string {
 
 * If you want to use the vector-go-sdk in your plugin, I recommend importing my fork: `"github.com/kercre123/vector-go-sdk/pkg/sdk-wrapper"`
 
-* Every bot uses the same GUID for authentication: 
-
-```
-tni1TRsTRTaNSapjo0Y+Sw==
-```
-
 ## STT services
 
 * Every intent and intent request sent to wire-pod gets put into a SpeechRequest type. This type has functions which go along with it.
