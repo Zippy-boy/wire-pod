@@ -11,6 +11,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     - A computer running Windows or macOS is preferred
     - An Android phone works too
 * Some command-line knowledge and experience
+    - If you want a version of wire-pod which is more easy to set up, check out [wire-prod-pod](https://github.com/kercre123/wire-prod-pod).
 
 ***
 
@@ -23,6 +24,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-epod-setup](https://keriganc.com/vector-epod-setup).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
+    - On many Linux distributions, you will need to open the Bluetooth menu and have it discovering in the background as you try pairing with vector-epod-setup.
 
 3. Follow the directions. The bot should start downloading an update. Once it is done, keep the page open but don't do anything else on the page. Follow the steps below to install wire-pod.
 
@@ -46,7 +48,7 @@ git clone https://github.com/kercre123/wire-pod
 ```
 
 4. Run setup.sh and follow the directions. Default settings can be used by just hitting enter with no other input on many of the options.
-    - When you get to where it asks whether you want to use an IP address, domain, or escapepod.local, you must choose the 3rd option.
+    - For PROD bots: When you get to where it asks whether you want to use an IP address, domain, or escapepod.local, you must choose the 3rd option.
 
 ```
 cd ~/wire-pod
@@ -149,7 +151,7 @@ sudo ./chipper/start.sh
 
 # Authenticate the bot with wire-pod
 
-1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot:*** Clear your bot's user data. You may skip this step, but if you do you will run into strange bugs.
+1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it, but it may cause unexpected behavior.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
