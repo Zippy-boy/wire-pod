@@ -27,10 +27,10 @@ Welcome to the wire-pod wiki!
 - Token and jdocs, so a robot can be "signed in" to it
 - A robot can sign in to wire-pod without ever touching a DDL server
 - A robot can also sign in to wire-pod without needing to clear user data
-    - There may be some bugs with SDK, you may also need to reauthenticate your bot after every reboot
 - There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
 - It is easy to create your own voice commands via plugins (see [Standards.md](./Standards)) and to implement the vector-go-sdk into your plugins
     - The vector-go-sdk is fully featured and relatively easy to use
+- When a bot is authenticated, the bot is added (or modified if already there) to `sdk_config.ini`, which allows the Python SDK to continue to work.
 
 ***
 
@@ -41,7 +41,6 @@ Welcome to the wire-pod wiki!
 - You must use 1.8 if you want to use this with a production bot. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
     - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
 - Vector 2.0 is not compatible with wire-pod.
-- Authentication with prod bots can be buggy without clearing user data
 - The connection check in CCIS will return a "TLS" error. This does not affect functionality and it is not a big deal 
     - Making it work to the point of saying "AVAILABLE" would add immense complexion
 
