@@ -23,11 +23,11 @@ Welcome to the wire-pod wiki!
 
 - Every voice command is implemented
 - Weather commands are easy to setup via [weatherapi.com](weatherapi.com) or [openweathermap.org](openweathermap.org)
-- Knowledge-graph ("I have a question") commands are easy to setup via houndify
-- Token and jdocs, so a robot can be "signed in" to it
+- Knowledge-graph ("I have a question") commands are easy to setup via [Houndify](https://www.soundhound.com/) or [OpenAI](https://openai.com/)
+- Token and jdocs handlers, so a robot can be "signed in" to it
 - A robot can sign in to wire-pod without ever touching a DDL server
 - A robot can also sign in to wire-pod without needing to clear user data
-- There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to control the robot with your keyboard
+- There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to access robot interfaces
 - It is easy to create your own voice commands via plugins (see [Standards.md](./Standards)) and to implement the vector-go-sdk into your plugins
     - The vector-go-sdk is fully featured and relatively easy to use
 - When a bot is authenticated, the bot is added (or modified if already there) to `sdk_config.ini`, which allows the Python SDK to continue to work.
@@ -39,7 +39,7 @@ Welcome to the wire-pod wiki!
 
 - The Vector mobile app cannot work with a bot that has been authenticated with wire-pod.
     - An alternative, mostly functional web app alternative is available
-- You must use 1.8 if you want to use this with a production bot. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
+- You must use 1.8 if you want to use this with a production bot. You cannot use any firmware version below that. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
     - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
 - Vector 2.0 is not compatible with wire-pod.
 
@@ -76,7 +76,7 @@ Welcome to the wire-pod wiki!
 
 * **DDL** - Digital Dream Labs acronym
 
-* **chipper** - what the voice server itself is called and may be referred to as.
+* **chipper** - what the voice server is called and may be referred to as.
 
 * **SDK** - software development kit. This is also what allows services such as the mobile app to communicate with Vector.
 
