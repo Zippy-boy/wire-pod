@@ -32,7 +32,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Installing wire-pod
 
-- wire-pod support most Linux distributions and Windows 10/11. Follow one of the following guides, then continue to "Authenticate the bot with wire-pod".
+- wire-pod supports most Linux distributions and Windows 10/11 (with WSL). Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
 
 ## Guide 1: Linux
 
