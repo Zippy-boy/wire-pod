@@ -14,7 +14,7 @@ Welcome to the wire-pod wiki!
 
 # What wire-pod is
 
-**wire-pod** is custom voice server software for the Anki (now Digital Dream Labs) Vector robot. It is an alternative to the official Escape Pod product and does not require any payment to Digital Dream Labs nor any connection to their servers. It works with every Vector 1.0, **including ones which haven't been unlocked**.
+**wire-pod** is custom voice server software for the Anki (now Digital Dream Labs) Vector robot. It is an alternative to the official Escape Pod product and does not require any payment to Digital Dream Labs nor any connection to their servers. It works with every Vector, **including ones which haven't been unlocked**.
 
 ***
 
@@ -39,9 +39,8 @@ Welcome to the wire-pod wiki!
 
 - The Vector mobile app cannot work with a bot that has been authenticated with wire-pod.
     - An alternative, mostly functional web app alternative is available
-- You must use 1.8 if you want to use this with a production bot. You cannot use any firmware version below that. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
+- You must use 1.8 or 2.0.1 if you want to use this with a production bot. You cannot use any firmware version below that. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
     - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
-- Vector 2.0 is not compatible with wire-pod.
 
 ***
 
@@ -53,7 +52,7 @@ Welcome to the wire-pod wiki!
     - Arch (pacman)
     - Fedora (dnf)
 - Windows (experimental)
-    - Under WSL
+    - Under WSL (currently broken with latest version of Ubuntu)
 
 ## Architecture support
 - x86_64
