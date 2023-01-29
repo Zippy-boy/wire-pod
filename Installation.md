@@ -1,9 +1,8 @@
 This is a guide for fully installing wire-pod. Please read every step fully before performing them!
 
 # Prerequisites
-* A Vector 1.0
-    - Can be a regular production bot, can also be an OSKR/dev-unlocked one
-    - Vector 2.0 is not supported at the moment
+* An Anki or Digital Dream Labs Vector robot
+    - Can be a regular production Vector 1.0 or 2.0, can also be OSKR/dev-unlocked
 * A computer running Linux or Windows 10/11
     - Distros with `pacman`, `dnf`, or `apt` are supported. Raspberry Pi OS (64-bit), Ubuntu, and Debian are good choices
 * A device with Bluetooth support
@@ -22,7 +21,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
     - This is NOT the same as clearing user data. This step will not clear user data.
 
-2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-epod-setup](https://keriganc.com/vector-epod-setup).
+2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
     - On many Linux distributions, you will need to open the Bluetooth menu and have it discovering in the background as you try pairing with vector-epod-setup.
 
@@ -151,7 +150,7 @@ sudo ./chipper/start.sh
 
 # Authenticate the bot with wire-pod
 
-1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it, but it may cause unexpected behavior.
+1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it, but it may cause unexpected behavior.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
@@ -160,7 +159,7 @@ sudo ./chipper/start.sh
     6.  Move the wheel until the cursor is on "CONFIRM"
     7.  Lift the lift up then down again
 
-2. Refresh the [vector-epod-setup](https://keriganc.com/vector-epod-setup) page and follow the instructions
+2. Refresh the [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) page and follow the instructions
 
 3. You should end up at a screen with an "ACTIVATE" button. Click on it.
     -   If it loads for a little bit then shows back up again, click on it again
