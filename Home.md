@@ -52,7 +52,7 @@ Welcome to the wire-pod wiki!
     - Arch (pacman)
     - Fedora (dnf)
 - Windows (experimental)
-    - Under WSL (currently broken with latest version of Ubuntu)
+    - Under WSL (currently broken with latest version of WSL Ubuntu)
 
 ## Architecture support
 - x86_64
