@@ -22,7 +22,7 @@ Welcome to the wire-pod wiki!
 # Features
 
 - Every voice command is implemented
-- Weather commands are easy to setup via [weatherapi.com](weatherapi.com) or [openweathermap.org](openweathermap.org)
+- Weather commands are easy to setup via [weatherapi.com](https://weatherapi.com) or [openweathermap.org](https://openweathermap.org)
 - Knowledge-graph ("I have a question") commands are easy to setup via [Houndify](https://www.soundhound.com/) or [OpenAI](https://openai.com/)
 - Token and jdocs handlers, so a robot can be "signed in" to it
 - A robot can sign in to wire-pod without ever touching a DDL server
