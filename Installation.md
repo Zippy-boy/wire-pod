@@ -154,7 +154,7 @@ sudo ./chipper/start.sh
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
-    4.  Take Vector off of the charger and twist one of the wheels until the cursor is on "CLEAR USER DATA"
+    4.  Take Vector off of the charger and twist one of the wheels until the cursor is on "RESET" (or "CLEAR USER DATA")
     5.  Lift the lift up then down again
     6.  Move the wheel until the cursor is on "CONFIRM"
     7.  Lift the lift up then down again
