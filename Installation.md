@@ -46,13 +46,14 @@ cd ~
 git clone https://github.com/kercre123/wire-pod
 ```
 
-4. Run setup.sh and follow the directions. Default settings can be used by just hitting enter with no other input on many of the options.
-    - For PROD bots: When you get to where it asks whether you want to use an IP address, domain, or escapepod.local, you must choose the 3rd option.
+4. Run setup.sh.
 
 ```
 cd ~/wire-pod
-sudo ./setup.sh
+sudo STT=vosk ./setup.sh
 ```
+
+(If you want to choose a different STT service, use just `sudo ./setup.sh`)
 
 5. Start wire-pod with the following command:
 
@@ -60,7 +61,22 @@ sudo ./setup.sh
 sudo ./chipper/start.sh
 ```
 
-6. It should show `Server started successfully!` after a while. If it gives an error along the lines of `nil pointer dereference`, run setup.sh and give a different port for chipper.
+It should show a log similar to the following. 
+
+```
+Initializing variables
+SDK info path: /home/kerigan/.anki_vector/
+API config JSON created
+Initiating vosk voice processor with language 
+Loading plugins
+Wire-pod is not setup. Use the webserver at port 8080 to set up wire-pod.
+Starting webserver at port 8080 (http://localhost:8080)
+Starting SDK app
+Starting server at port 80 for connCheck
+Configuration page: http://192.168.1.221:8080
+```
+
+6. With a device on the same network as wire-pod, open a browser and head to the configuration page. In the case of the above log, http://192.168.1.221:8080. In that page, follow the instructions. Wire-pod should then be set up!
 
 7. If you want to make wire-pod run in the background (as a daemon), run the following commands (press CTRL+C to stop wire-pod if you are running it):
 
@@ -74,13 +90,13 @@ sudo systemctl start wire-pod
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
 
 ```
+cd ~/wire-pod
 sudo ./setup.sh scp vectorip /path/to/key
 ```
 
 9. If you have a **production** bot you would like to set up with wire-pod, run the following commands in a Terminal application:
 
 * Don't do this if you are here from the Windows guide
-* If you want to set up an OSKR/dev-unlocked bot but chose the escapepod.local option in setup.sh, you must do this as well
 
 ```
 sudo hostnamectl set-hostname escapepod
@@ -90,7 +106,7 @@ sudo systemctl enable avahi-daemon
 
 10. At this point, voice commands should work if your bot had been set up previously.
 
-## Guide 2: Windows 10 or higher
+## Guide 2: Windows 10 or higher (CURRENTLY BROKEN)
 
 - NOTE: Make sure your installation is fully up to date.
 
