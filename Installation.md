@@ -10,7 +10,6 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     - A computer running Windows or macOS is preferred
     - An Android phone works too
 * Some command-line knowledge and experience
-    - If you want a version of wire-pod which is more easy to set up, check out [wire-prod-pod](https://github.com/kercre123/wire-prod-pod).
 
 ***
 
