@@ -84,16 +84,11 @@ sudo ./setup.sh daemon-enable
 sudo systemctl start wire-pod
 ```
 
-8. If you have an **OSKR or dev bot**, you can set them up with wire-pod with the following command (replace vectorip with Vector's actual IP address, and /path/to/key with the actual path to the SSH key).
-    -  If you are on my software (WireOS), you do not have to provide a key as the script will fetch it itself.
+8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
+    -  After you have done this, use the section right above that to finish setting up the bot, or use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
 
-```
-cd ~/wire-pod
-sudo ./setup.sh scp vectorip /path/to/key
-```
-
-9. If you have a **production** bot you would like to set up with wire-pod, run the following commands in a Terminal application:
+9. If you are going the production-bot route and you would like to set up with wire-pod, run the following commands in a Terminal application:
 
 * Don't do this if you are here from the Windows guide
 
@@ -103,7 +98,7 @@ sudo systemctl restart avahi-daemon
 sudo systemctl enable avahi-daemon
 ```
 
-10. At this point, voice commands should work if your bot had been set up previously.
+10. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
 
 ## Guide 2: Windows 10 or higher (CURRENTLY BROKEN)
 
