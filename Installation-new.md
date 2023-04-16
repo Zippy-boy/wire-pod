@@ -19,6 +19,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 - What this section does:
     -   Puts the bot in recovery mode, where you can put on any (production-signed) firmware version
+    -   It does NOT matter what firmware version you start on. v1.8, v1.6, v2.0, etc. This is able to put any bot on the software version it needs to be on.
     -   Applies a special firmware compiled by DDL which allows functionality with escape pod
         -   The use of this OTA does not require paying for escape pod
         -   You can tell if this software is applied by not by going to the CCIS page and looking at the firmware string. It should have `ep` at the end of it.
