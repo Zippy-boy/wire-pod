@@ -95,7 +95,7 @@ sudo systemctl start wire-pod
 
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
-    -  After you have done this, use the section right above that to finish setting up the bot, or use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
+    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) to finish setting up the bot.
 
 9. If you are going the production-bot route and you would like to set up with wire-pod, run the following commands in a Terminal application:
 
@@ -177,7 +177,7 @@ sudo ./chipper/start.sh
 
 # Authenticate the bot with wire-pod
 
-1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it, but it may cause unexpected behavior.
+1. ***PRODUCTION BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
