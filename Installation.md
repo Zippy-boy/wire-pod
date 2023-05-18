@@ -17,12 +17,21 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 - ***NOTE: This section is for production bots only. If you have an OSKR/dev-unlocked bot, skip this part.***
 
+- What this section does:
+    -   Puts the bot in recovery mode, where you can put on any (production-signed) firmware version
+    -   It does NOT matter what firmware version you start on. v1.8, v1.6, v2.0, etc. This is able to put any bot on the software version it needs to be on.
+    -   Applies a special firmware compiled by DDL which allows functionality with escape pod
+        -   The use of this OTA does not require paying for escape pod
+        -   You can tell if this software is applied by not by going to the CCIS page and looking at the firmware string. It should have `ep` at the end of it.
+        -   Just running v2.0.* on your bot is NOT enough. You need this special ep firmware.
+
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
     - This is NOT the same as clearing user data. This step will not clear user data.
 
 2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
-    - On many Linux distributions, you will need to open the Bluetooth menu and have it discovering in the background as you try pairing with vector-epod-setup.
+    - On many Linux distributions, you may need to open the system's Bluetooth settings menu and have it discovering in the background as you try pairing with vector-wirepod-setup.
+        -   BLE support is much more stable in the very modern distros, like Debian bookworm, so you don't need to do this on some
 
 3. Follow the directions. The bot should start downloading an update. Once it is done, keep the page open but don't do anything else on the page. Follow the steps below to install wire-pod.
 
@@ -86,7 +95,7 @@ sudo systemctl start wire-pod
 
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
-    -  After you have done this, use the section right above that to finish setting up the bot, or use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
+    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) to finish setting up the bot.
 
 9. If you are going the production-bot route and you would like to set up with wire-pod, run the following commands in a Terminal application:
 
@@ -100,7 +109,7 @@ sudo systemctl enable avahi-daemon
 
 10. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
 
-## Guide 2: Windows 10 or higher (CURRENTLY BROKEN)
+## Guide 2: Windows 10/11
 
 - NOTE: Make sure your installation is fully up to date.
 
@@ -122,7 +131,15 @@ wsl --install
 
 6. It should then ask for a UNIX password. Make sure you remember this! It will not show any indication that you are typing anything, that is normal.
 
-7. You should now be at an Ubuntu terminal. Leave that open in the background.
+7. You should now be at an Ubuntu terminal. In this terminal, run the following command:
+
+```
+sudo apt install -y net-tools
+```
+
+- Note: This will ask for a password. Enter it like normal. It won't any indication that you are typing it in, this is normal.
+
+- Keep this Ubuntu terminal running in the background
 
 8. Open up Powershell as administrator
 	-	Open the start menu, type in Powershell, right click the first result, click "Run as administrator"
@@ -154,13 +171,13 @@ sudo ./chipper/start.sh
 
 * NOTE: WSL does not have functional systemd, so you will need to run the above two commands every time you want to start the server. It will not start automatically.
 
-- It should now be setup!
+- It should now be setup! Now you can continue
 
 ***
 
 # Authenticate the bot with wire-pod
 
-1. ***PROD BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it, but it may cause unexpected behavior.
+1. ***PRODUCTION BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
