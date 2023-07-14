@@ -17,3 +17,16 @@ If you have an issue, check here before opening an issue. This page will also co
 2. Make sure that the device running wire-pod has the hostname `escapepod`.
 
 3. Make sure wire-pod is running.
+
+## Open an issue
+
+-   If you have an issue apart from these, feel free to open an issue. Note that I do not follow Discussions.
+
+-   If you are facing an issue, an issue MUST contain the following:
+
+    1.   A detailed description of what you are facing. I will not accept just an "it doesn't work".
+    2.   Hardware details. For instance, if you are running wire-pod on a Raspberry Pi 4, include that.
+    3.   What steps have you tried, if any?
+    4.   What software version is Vector on? Include the entire version string. You can see this by going to the [CCIS](https://support.digitaldreamlabs.com/article/531-vector-ccis) screen.
+
+-   Feature requests should also be done via issues. That can be done however you want at the moment.
