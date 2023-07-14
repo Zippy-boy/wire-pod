@@ -179,6 +179,8 @@ sudo ./chipper/start.sh
 
 This is a required step which allows the "Bot Settings" portion in the web app to work.
 
+***The steps are different depending on if your bot is unlocked or not. Double-check that you are completing the correct section.***
+
 ## Authenticate a **production** bot
 
 1. It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
