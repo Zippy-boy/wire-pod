@@ -15,7 +15,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Preparing the bot (production bots only)
 
-- ***NOTE: This section is for production bots only. If you have an OSKR/dev-unlocked bot, skip this part.***
+- ***NOTE: This section is for production bots only. If you have an OSKR/dev-unlocked bot, skip this section.***
 
 - What this section does:
     -   Puts the bot in recovery mode, where you can put on any (production-signed) firmware version
@@ -23,12 +23,12 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     -   Applies a special firmware compiled by DDL which allows functionality with escape pod
         -   The use of this OTA does not require paying for escape pod
         -   You can tell if this software is applied by not by going to the CCIS page and looking at the firmware string. It should have `ep` at the end of it.
-        -   Just running v2.0.* on your bot is NOT enough. You need this special ep firmware.
+        -   Just running v2.0.* on your bot is NOT enough. ***You need this special ep firmware***.
 
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
     - This is NOT the same as clearing user data. This step will not clear user data.
 
-2. Once he has reached the anki.com/v or ddl.io/v screen, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
+2. Once he has reached the ***anki.com/v or ddl.io/v screen***, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
     - On many Linux distributions, you may need to open the system's Bluetooth settings menu and have it discovering in the background as you try pairing with vector-wirepod-setup.
         -   BLE support is much more stable in the very modern distros, like Debian bookworm, so you don't need to do this on some
@@ -171,13 +171,17 @@ sudo ./chipper/start.sh
 
 * NOTE: WSL does not have functional systemd, so you will need to run the above two commands every time you want to start the server. It will not start automatically.
 
-- It should now be setup! Now you can continue
+- Continue on to the next part, "Authenticate the bot with wire-pod"
 
 ***
 
 # Authenticate the bot with wire-pod
 
-1. ***PRODUCTION BOTS ONLY, skip if you have an OSKR/dev-unlocked bot as the setup.sh script will handle it:*** It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
+This is a required step which allows the "Bot Settings" portion in the web app to work.
+
+## Authenticate a **production** bot
+
+1. It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
@@ -187,6 +191,7 @@ sudo ./chipper/start.sh
     7.  Lift the lift up then down again
 
 2. Refresh the [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) page and follow the instructions
+    -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
 3. You should end up at a screen with an "ACTIVATE" button. Click on it.
     -   If it loads for a little bit then shows back up again, click on it again
@@ -194,3 +199,27 @@ sudo ./chipper/start.sh
 4. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
 5. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
+
+## Authenticate an **unlocked** bot
+
+1. Head to the wire-pod web interface. This is the same as the configuration page mentioned in the previous section.
+
+2. Click on "Bot Setup"
+
+3. In the second section, "Set up OSKR/dev bot", follow the instructions.
+    -   You may need to run this twice if it ever shows "not running (error: <error>)". It's success will be made clear.
+
+4. Refresh the [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) page and follow the instructions.
+    -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
+
+5. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
+
+6. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
+
+# Modifying bot settings
+
+1. Head to the web app/configuration page.
+
+2. Click on "Bot Settings" and select your bot.
+
+3. Here, you can modify bot settings like location and weather units.
