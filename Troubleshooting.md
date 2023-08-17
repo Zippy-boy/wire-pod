@@ -18,6 +18,8 @@ If you have an issue, check here before opening an issue. This page will also co
 
 3. Make sure wire-pod is running.
 
+4. `escapepod.local` must resolve to your wire-pod instance.
+
 ## Open an issue
 
 -   If you have an issue apart from these, feel free to open an issue. Note that I do not follow Discussions.
