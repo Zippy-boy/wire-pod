@@ -158,11 +158,11 @@ curl -o wsl-firewall.ps1 https://keriganc.com/wsl-firewall.ps1
 .\wsl-firewall.ps1
 ```
 
-11. Return to the Ubuntu terminal window and follow the Linux instructions for installation.
+11. Return to the Ubuntu terminal window, **then follow the Linux instructions (scroll up) for installation BEFORE continuing to the next step**
 
 (if it asks for a password, enter what you entered for the UNIX password earlier)
 
-12. Once that is finished, run the following commands to start the server:
+12. Make sure you have read step 11 completely. Once the installation is finished, run the following commands to start the server:
 
 ```
 cd ~/wire-pod
