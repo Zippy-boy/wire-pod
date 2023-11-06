@@ -40,6 +40,18 @@ sudo ./start.sh
 
 If you have set wire-pod up as a daemon, run `sudo systemctl start wire-pod` rather than `sudo ./start.sh`.
 
+***
+
+# Environment variables
+
+There are a few environment variables you can use to modify wire-pod behavior. Place these in ~/wire-pod/chipper/source.sh and restart wire-pod (via start.sh) for them to take effect.
+
+`VOSK_WITH_GRAMMER` (true or false, default: false) - enables/default vosk grammer optimizations. Increases speed to the point where it can run on very low end hardware, but limits the transcribable words to only what intents can match to, meaning intent-graph functionality won't work.
+
+`JDOCS_ENABLE_PINGER` (true or false, default: true) - enables/disables the jdocs pinger. The Jdocs pinger was created as a workaround and allows production bots to stay connected to wire-pod. This requires wire-pod to be able to connect to the robot. This is here in case you want to set wire-pod up as a public server.
+
+`WEBSERVER_PORT` (int, default: 8080) - sets the web interface port.
+
 
 ***
 
