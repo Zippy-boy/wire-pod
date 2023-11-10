@@ -51,7 +51,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 ```
 cd ~
-git clone https://github.com/kercre123/wire-pod
+git clone https://github.com/kercre123/wire-pod --depth=1
 ```
 
 4. Run setup.sh.
