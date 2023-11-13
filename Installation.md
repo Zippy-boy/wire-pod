@@ -111,7 +111,7 @@ sudo systemctl enable avahi-daemon
 
 ## Guide 2: Windows 10/11
 
-- I have create an installer executable for wire-pod.
+- I have created an installer executable for wire-pod.
 
 - To set up wire-pod on your Windows machine:
 
