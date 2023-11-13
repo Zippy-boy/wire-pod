@@ -111,69 +111,19 @@ sudo systemctl enable avahi-daemon
 
 ## Guide 2: Windows 10/11
 
-- NOTE: Make sure your installation is fully up to date.
+- I have create an installer executable for wire-pod.
 
-1. Open up Powershell as administrator
-	-	Open the start menu, type in Powershell, right click, click "Run as administrator"
+- To set up wire-pod on your Windows machine:
 
-2. Enter the following commands (this will change your computer's name to `escapepod`):
-
-```
-Rename-Computer -NewName "escapepod"
-wsl --install
-```
-
-3. Reboot your computer.
-
-4. When you log in after the reboot, Ubuntu should start install. Wait for it to finish.
-
-5. The Ubuntu installer should ask for a UNIX username. Enter one. example: `wire`
-
-6. It should then ask for a UNIX password. Make sure you remember this! It will not show any indication that you are typing anything, that is normal.
-
-7. You should now be at an Ubuntu terminal. In this terminal, run the following command:
-
-```
-sudo apt install -y net-tools
-```
-
-- Note: This will ask for a password. Enter it like normal. It won't any indication that you are typing it in, this is normal.
-
-- Keep this Ubuntu terminal running in the background
-
-8. Open up Powershell as administrator
-	-	Open the start menu, type in Powershell, right click the first result, click "Run as administrator"
-
-9. In Powershell, run the following command. When it asks for a confirmation, enter `Y`.
-
-```
-Set-ExecutionPolicy Bypass
-```
-
-10. In Powershell, run the following commands:
-
-```
-cd ~
-curl -o wsl-firewall.ps1 https://keriganc.com/wsl-firewall.ps1
-.\wsl-firewall.ps1
-```
-
-11. Return to the Ubuntu terminal window, **then follow the Linux instructions (scroll up) for installation BEFORE continuing to the next step**
-
-(if it asks for a password, enter what you entered for the UNIX password earlier)
-
-12. Make sure you have read step 11 completely. Once the installation is finished, run the following commands to start the server:
-
-```
-cd ~/wire-pod
-sudo ./chipper/start.sh
-```
-
-* NOTE: WSL does not have functional systemd, so you will need to run the above two commands every time you want to start the server. It will not start automatically.
-
-- Continue on to the next part, "Authenticate the bot with wire-pod"
-
-***
+1. Make sure no other wire-pod instances are running on the network.
+2. Make sure no other devices on the network are called `escapepod`.
+3. If you want to use a regular production robot, you must [set your computer's name](https://www.pcmag.com/how-to/how-to-change-computer-name-windows) to `escapepod` then reboot your computer.
+4. Head to [the latest releases page](https://github.com/kercre123/wire-pod/releases/latest).
+5. Download "wire-pod-installer.exe" from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer.
+6. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
+7. Click "Next", wait for it to finish installing, then click "Exit". Wire-pod will eventually open.
+8. On the message pop-up, click "Open browser" and finish setting wire-pod up.
+9. Continue on to the next section to authenticate your robot with wire-pod.
 
 # Authenticate the bot with wire-pod
 
