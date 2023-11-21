@@ -26,10 +26,8 @@ Welcome to the wire-pod wiki!
 - Knowledge-graph ("I have a question") commands are easy to setup via [Houndify](https://www.soundhound.com/) or [OpenAI](https://openai.com/)
 - Token and jdocs handlers, so a robot can be "signed in" to it
 - A robot can sign in to wire-pod without ever touching a DDL server
-- A robot can also sign in to wire-pod without needing to clear user data
-- There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to access robot interfaces
-- It is easy to create your own voice commands via plugins (see [Standards.md](./Standards)) and to implement the vector-go-sdk into your plugins
-    - The vector-go-sdk is fully featured and relatively easy to use
+- A robot can also sign in to wire-pod without needing to clear user data (if the DDL servers are up)
+- There is a Vector mobile app replacement hosted at port 8080 (by default) which allows you to configure bot settings and to access robot interfaces. This interface also allows you to create custom intents.
 - When a bot is authenticated, the bot is added (or modified if already there) to `sdk_config.ini`, which allows the Python SDK to continue to work.
 - A multiplexer which allows the HTTPS connection check to work, so the CCIS screen will show "NETWORK: AVAILABLE".
 
@@ -38,9 +36,9 @@ Welcome to the wire-pod wiki!
 # Caveats
 
 - The Vector mobile app cannot work with a bot that has been authenticated with wire-pod.
-    - An alternative, mostly functional web app alternative is available
+    - An alternative, fully functional web app alternative is included
 - You must use 1.8 or 2.0.1 if you want to use this with a production bot. You cannot use any firmware version below that. I personally haven't run into any issues with it, and have noticed it to actually be quite active, but it is something to note.
-    - When Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
+    - When (if) Digital Dream Labs provides newer escape pod robot software, you can upgrade to those and they should retain functionality with wire-pod.
 
 ***
 
@@ -51,13 +49,11 @@ Welcome to the wire-pod wiki!
     - Debian (apt)
     - Arch (pacman)
     - Fedora (dnf)
-- Windows (experimental)
-    - Under WSL
+- Windows 10 and 11
 
 ## Architecture support
 - x86_64
 - aarch64
-- armhf
 
 ***
 
