@@ -117,13 +117,12 @@ sudo systemctl enable avahi-daemon
 
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
-3. If you want to use a regular production robot, you must [set your computer's name](https://www.pcmag.com/how-to/how-to-change-computer-name-windows) to `escapepod` then reboot your computer.
-4. Head to [the latest releases page](https://github.com/kercre123/wire-pod/releases/latest).
-5. Download "wire-pod-installer.exe" from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer.
-6. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
-7. Click "Next", wait for it to finish installing, then click "Exit". Wire-pod will eventually open.
-8. On the message pop-up, click "Open browser" and finish setting wire-pod up.
-9. Continue on to the next section to authenticate your robot with wire-pod.
+3. Head to [the latest releases page](https://github.com/kercre123/wire-pod/releases/latest).
+4. Download "wire-pod-installer.exe" from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer automatically.
+5. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
+6. Follow the instructions.
+7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
+8. Continue on to the next section to authenticate your robot with wire-pod.
 
 # Authenticate the bot with wire-pod
 
