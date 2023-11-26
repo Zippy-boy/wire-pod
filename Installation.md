@@ -3,7 +3,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 # Prerequisites
 * An Anki or Digital Dream Labs Vector robot
     - Can be a regular production Vector 1.0 or 2.0, can also be OSKR/dev-unlocked
-* A computer running Linux or Windows 10/11
+* A computer running Linux, macOS, or Windows 10/11
     - Distros with `pacman`, `dnf`, or `apt` are supported. Raspberry Pi OS (64-bit), Ubuntu, and Debian are good choices
 * A device with Bluetooth support
     - Can be the same machine as above, doesn't have to be a seperate one
@@ -39,13 +39,14 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Installing wire-pod
 
-- wire-pod supports most Linux distributions and Windows 10/11 (with WSL). Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
+- wire-pod supports most Linux distributions, macOS, and Windows 10/11. Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
 
-## Guide 1: Linux
+## Guide 1: Linux/macOS
 
 1. On the device you would like to install wire-pod on, open a Terminal application
 
 2. Install git via your package manager. On Debian/Ubuntu/Raspberry Pi OS, the command would be `sudo apt install -y git`.
+    - On macOS you probably already have git installed. But if for some reason you don't have it, install it using `brew install git`.
 
 3. Clone the directory with the following commands.
 
