@@ -50,6 +50,7 @@ Welcome to the wire-pod wiki!
     - Arch (pacman)
     - Fedora (dnf)
 - Windows 10 and 11
+- macOS
 
 ## Architecture support
 - x86_64
