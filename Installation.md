@@ -28,7 +28,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
     - This is NOT the same as clearing user data. This step will not clear user data.
 
-2. Once he has reached the ***anki.com/v or ddl.io/v screen***, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://keriganc.com/vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup).
+2. Once he has reached the ***anki.com/v or ddl.io/v screen***, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://vector.techshop82.com/](https://vector.techshop82.com/).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
     - On many Linux distributions, you may need to open the system's Bluetooth settings menu and have it discovering in the background as you try pairing with vector-wirepod-setup.
         -   BLE support is much more stable in the very modern distros, like Debian bookworm, so you don't need to do this on some
@@ -96,7 +96,7 @@ sudo systemctl start wire-pod
 
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
-    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) to finish setting up the bot.
+    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://vector.techshop82.com/) to finish setting up the bot.
 
 9. If you are going the production-bot route and you would like to set up with wire-pod, run the following commands in a Terminal application:
 
@@ -142,7 +142,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
     6.  Move the wheel until the cursor is on "CONFIRM"
     7.  Lift the lift up then down again
 
-2. Refresh the [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) page and follow the instructions
+2. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
 3. You should end up at a screen with an "ACTIVATE" button. Click on it.
@@ -161,7 +161,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 3. In the second section, "Set up OSKR/dev bot", follow the instructions.
     -   You may need to run this twice if it ever shows "not running (error: <error>)". It's success will be made clear.
 
-4. Refresh the [vector-wirepod-setup](https://keriganc.com/vector-wirepod-setup) page and follow the instructions.
+4. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions.
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
 5. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
