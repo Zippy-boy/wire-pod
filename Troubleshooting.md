@@ -18,7 +18,11 @@ If you have an issue, check here before opening an issue. This page will also co
 
 3. Make sure wire-pod is running.
 
-4. `escapepod.local` must resolve to your wire-pod instance.
+4. `escapepod.local` must resolve to your wire-pod instance. You can check this by opening a browser on another device on the same network and going to http://escapepod.local:8080
+
+5. Restart your Vector and the device running wire-pod a few times. mDNS can be finnicky.
+
+6. Ensure any firewalls are disabled or are allowing traffic between wire-pod and Vector.
 
 ## Open an issue
 
