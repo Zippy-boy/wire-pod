@@ -3,7 +3,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 # Prerequisites
 * An Anki or Digital Dream Labs Vector robot
     - Can be a regular production Vector 1.0 or 2.0, can also be OSKR/dev-unlocked
-* A computer running Linux, macOS, or Windows 10/11
+* Either a computer running Linux, macOS, or Windows 10/11; or an Android phone running Android 6.0 or above.
     - Distros with `pacman`, `dnf`, or `apt` are supported. Raspberry Pi OS (64-bit), Ubuntu, and Debian are good choices
 * A device with Bluetooth support
     - Can be the same machine as above, doesn't have to be a seperate one
