@@ -14,15 +14,22 @@ If you have an issue, check here before opening an issue. This page will also co
 
 1. Make sure you don't have an official escape pod running, or any other device with the hostname `escapepod`.
 
-2. Make sure that the device running wire-pod has the hostname `escapepod`.
+2. Make sure wire-pod is running.
 
-3. Make sure wire-pod is running.
+3. `escapepod.local` must resolve to your wire-pod instance. You can check this by opening a browser on another device on the same network and going to http://escapepod.local:8080
 
-4. `escapepod.local` must resolve to your wire-pod instance. You can check this by opening a browser on another device on the same network and going to http://escapepod.local:8080
+4. Restart your Vector and the device running wire-pod a few times. mDNS can be finnicky.
 
-5. Restart your Vector and the device running wire-pod a few times. mDNS can be finnicky.
+5. Wait a minute or so and try again. mDNS broadcasts every 60 seconds, you might just need to wait for that.
 
 6. Ensure any firewalls are disabled or are allowing traffic between wire-pod and Vector.
+
+7. If you are running wire-pod on Linux, try:
+
+```
+sudo hostnamectl set-hostname escapepod
+sudo systemctl restart avahi-daemon
+```
 
 ## Open an issue
 
