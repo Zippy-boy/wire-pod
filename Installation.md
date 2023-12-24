@@ -118,12 +118,41 @@ sudo systemctl enable avahi-daemon
 
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
-3. Head to [the latest releases page](https://github.com/kercre123/wire-pod/releases/latest).
-4. Download "wire-pod-installer.exe" from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer automatically.
+3. Head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
+4. Download "WirePodInstaller-v1.0.0.exe" (1.0.0 may be different) from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer automatically.
 5. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
 6. Follow the instructions.
 7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
-8. Continue on to the next section to authenticate your robot with wire-pod.
+8. Continue on to "Authenticate the bot with wire-pod".
+
+## Guide 3: macOS 10.10 and above
+
+1. Make sure no other wire-pod instances are running on the network.
+2. Make sure no other devices on the network are called `escapepod`.
+3. Head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
+4. Download "WirePod-darwin-amd64-v1.0.0.dmg" (1.0.0 may be different) from that releases page and run it.
+5. Drag WirePod to the Applications folder and close the window.
+6. Go to your Applications and run WirePod.
+7. You will get a popup saying the developer is unidentified. Go to Settings/System Preferences -> Security then click Run Anyway.
+8. Follow the prompts from WirePod.
+9. Click "Open browser" and finish setting wire-pod up.
+10. Continue on to "Authenticate the bot with wire-pod".
+
+## Guide 4: Android 6.0 and above
+
+- This is still in an early proof-of-concept stage. Though, it is fully featured.
+
+1. Make sure no other wire-pod instances are running on the network.
+2. Make sure no other devices on the network are called `escapepod`.
+3. On an Android device, head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
+4. Download "WirePod-1.0.0.apk" (1.0.0 may be different) from that releases page and run it.
+5. Install it. This can be done by pressing on it in the notifications panel. If it prompts you, open it with Package Installer.
+6. You might get a "For your security, your phone is not allowed to install unknown apps from this source." warning. Click "Settings", toggle "Allow from this source", then (if it doesn't do it after a few seconds) press the back button (or do the back gesture) and click "Install".
+7. You might get a Play Protect warning. Press "More details" (or something akin to that) and select "Install anyway".
+8. Go to Settings > Apps > WirePod. Make sure "Battery" is set to "Unoptimized" or "Not optimizied". If this setting doesn't exist, you can skip this step.
+9. Open WirePod and select "Start".
+10. Go to the URL under "status" in the device browser and finish setting WirePod up.
+11. Continue on to "Authenticate the bot with wire-pod".
 
 # Authenticate the bot with wire-pod
 
@@ -133,7 +162,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 
 ## Authenticate a **production** bot
 
-1. It is recommended to clear your bot's user data. This is not required, and you can still authenticate with wire-pod without it (as long as the last server you have authenticated the bot with was the DDL/Anki production stack), but it may cause unexpected behavior.
+1. Clear your bot's userdata. Your bot can technically work with WirePod if you don't, but weird behavior WILL happen and I am not responsible.
     1.  Place Vector on the charger
     2.  Double press his button
     3.  Lift his lift up then down
