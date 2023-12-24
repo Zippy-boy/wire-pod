@@ -39,9 +39,11 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Installing wire-pod
 
-- wire-pod supports most Linux distributions, macOS, and Windows 10/11. Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
+- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
 
-## Guide 1: Linux/macOS
+## Guide 1: Linux (and macOS, if you want to build from scratch)
+
+-  If you are on macOS and want an easier experience, scroll down to Guide 3.
 
 1. On the device you would like to install wire-pod on, open a Terminal application
 
@@ -97,18 +99,9 @@ sudo systemctl start wire-pod
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
     -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://vector.techshop82.com/) to finish setting up the bot.
+      -  Note that this site serves multiple purposes. If a bot is in recovery mode, the site will apply an OTA. If the bot has firmware already downloaded, it will enter a different mode and authenticate the bot instead.
 
-9. If you are going the production-bot route and you would like to set up with wire-pod, run the following commands in a Terminal application:
-
-* Don't do this if you are here from the Windows guide
-
-```
-sudo hostnamectl set-hostname escapepod
-sudo systemctl restart avahi-daemon
-sudo systemctl enable avahi-daemon
-```
-
-10. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
+9. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
 
 ## Guide 2: Windows 10/11
 
