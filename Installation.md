@@ -187,6 +187,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 
 4. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions.
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
+    -   If it shows an error, wait around 20 seconds and try again. It may take a few tries.
 
 5. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
