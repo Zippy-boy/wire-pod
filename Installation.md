@@ -33,7 +33,16 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
     - On many Linux distributions, you may need to open the system's Bluetooth settings menu and have it discovering in the background as you try pairing with vector-wirepod-setup.
         -   BLE support is much more stable in the very modern distros, like Debian bookworm, so you don't need to do this on some
 
-3. Follow the directions. The bot should start downloading an update. Once it is done, keep the page open but don't do anything else on the page. Follow the steps below to install wire-pod.
+3. Follow the directions. The bot should start downloading an update.
+
+4. When the update is done, clear your bot's user data. Your bot can technically work with WirePod if you don't, but weird behavior WILL happen and I am not responsible.
+    1.  Place Vector on the charger
+    2.  Double press his button
+    3.  Lift his lift up then down
+    4.  Take Vector off of the charger and twist one of the wheels until the cursor is on "RESET" (or "CLEAR USER DATA")
+    5.  Lift the lift up then down again
+    6.  Move the wheel until the cursor is on "CONFIRM"
+    7.  Lift the lift up then down again
 
 ***
 
@@ -155,24 +164,15 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 
 ## Authenticate a **production** bot
 
-1. Clear your bot's userdata. Your bot can technically work with WirePod if you don't, but weird behavior WILL happen and I am not responsible.
-    1.  Place Vector on the charger
-    2.  Double press his button
-    3.  Lift his lift up then down
-    4.  Take Vector off of the charger and twist one of the wheels until the cursor is on "RESET" (or "CLEAR USER DATA")
-    5.  Lift the lift up then down again
-    6.  Move the wheel until the cursor is on "CONFIRM"
-    7.  Lift the lift up then down again
-
-2. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions
+1. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
-3. You should end up at a screen with an "ACTIVATE" button. Click on it.
+2. You should end up at a screen with an "ACTIVATE" button. Click on it.
     -   If it loads for a little bit then shows back up again, click on it again
 
-4. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
+3. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
-5. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
+4. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
 
 ## Authenticate an **unlocked** bot
 
