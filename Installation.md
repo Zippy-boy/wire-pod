@@ -143,6 +143,7 @@ sudo systemctl start wire-pod
 ## Guide 4: Android 6.0 and above
 
 - This is still in an early proof-of-concept stage. Though, it is fully featured.
+- Make sure you are using Google Chrome for all of the links.
 
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
@@ -153,7 +154,8 @@ sudo systemctl start wire-pod
 7. You might get a Play Protect warning. Press "More details" (or something akin to that) and select "Install anyway".
 8. Go to Settings > Apps > WirePod. Make sure "Battery" is set to "Unoptimized" or "Not optimizied". If this setting doesn't exist, you can skip this step.
 9. Open WirePod and select "Start".
-10. Go to the URL under "status" in the device browser and finish setting WirePod up.
+10. Go to the URL under "WirePod Control" in the device browser and finish setting WirePod up.
+  -  The "with specific grammer?" checkbox removes some words from the speech model. This speeds up speech recognition, but means the robot will only understand the words he needs to understand. So you can't directly ask "what's the meaning of life?" or something like that. The intent-graph feature would be disabled. It is recommended you don't check this, but you can check it if you want better performance.
 11. Continue on to "Authenticate the bot with wire-pod".
 
 # Authenticate the bot with wire-pod
