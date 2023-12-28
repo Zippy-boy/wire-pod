@@ -53,7 +53,6 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 ## Guide 1: Linux (and macOS, if you want to build from scratch)
 
 -  If you are on macOS and want an easier experience, scroll down to Guide 3.
--  If you are installing wire-pod on a raspberry pi, you must change your pi's hostname to "escapepod" or activation will fail.
 
 1. On the device you would like to install wire-pod on, open a Terminal application
 
@@ -177,6 +176,8 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 3. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
 4. Once setup shows "Vector setup is complete!", you are done! Your bot should now be fully authenticated and set up!
+
+-  If you are having issues, check the [Troubleshooting](../Troubleshooting) page
 
 ## Authenticate an **unlocked** bot
 
