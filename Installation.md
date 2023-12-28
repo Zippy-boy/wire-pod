@@ -102,7 +102,7 @@ Configuration page: http://192.168.1.221:8080
 7. If you want to make wire-pod run in the background (as a daemon), run the following commands (press CTRL+C to stop wire-pod if you are running it):
 
 ```
-sudo ./wire-pod/setup.sh daemon-enable
+sudo ~/wire-pod/setup.sh daemon-enable
 sudo systemctl start wire-pod
 ```
 
