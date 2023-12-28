@@ -132,7 +132,7 @@ sudo systemctl start wire-pod
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
 3. Head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
-4. Download "WirePod-darwin-amd64-v1.0.0.dmg" (1.0.0 may be different) from that releases page and run it.
+4. Download "WirePod-macOS-amd64-v1.0.0.dmg" (1.0.0 may be different) from that releases page and run it.
 5. Drag WirePod to the Applications folder and close the window.
 6. Go to your Applications and run WirePod.
 7. You will get a popup saying the developer is unidentified. Go to Settings/System Preferences -> Security then click Run Anyway.
