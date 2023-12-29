@@ -121,7 +121,7 @@ sudo systemctl start wire-pod
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
 3. Head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
-4. Download "WirePodInstaller-v1.0.0.exe" (1.0.0 may be different) from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer automatically.
+4. Download "WirePodInstaller-v#.#.#.exe" (#.#.# corresponds to the latest release version) from that releases page and run it. It may take a little while at first launch. Do not download the .zip file - that will be gotten by the installer automatically.
 5. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
 6. Follow the instructions.
 7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
@@ -132,7 +132,7 @@ sudo systemctl start wire-pod
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
 3. Head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
-4. Download "WirePod-macOS-amd64-v1.0.0.dmg" (1.0.0 may be different) from that releases page and run it.
+4. Download "WirePod-v#.#.#.dmg" (#.#.# corresponds to the latest release version) from that releases page and run it.
 5. Drag WirePod to the Applications folder and close the window.
 6. Go to your Applications and run WirePod.
 7. You will get a popup saying the developer is unidentified. Go to Settings/System Preferences -> Security then click Run Anyway.
@@ -148,7 +148,7 @@ sudo systemctl start wire-pod
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
 3. On an Android device, head to [the latest WirePod releases page](https://github.com/kercre123/WirePod/releases/latest) (different from wire-pod).
-4. Download "WirePod-1.0.0.apk" (1.0.0 may be different) from that releases page and run it.
+4. Download "WirePod-#.#.#.apk" (#.#.# corresponds to the latest release version) from that releases page and run it.
 5. Install it. This can be done by pressing on it in the notifications panel. If it prompts you, open it with Package Installer.
 6. You might get a "For your security, your phone is not allowed to install unknown apps from this source." warning. Click "Settings", toggle "Allow from this source", then (if it doesn't do it after a few seconds) press the back button (or do the back gesture) and click "Install".
 7. You might get a Play Protect warning. Press "More details" (or something akin to that) and select "Install anyway".
