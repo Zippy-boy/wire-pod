@@ -140,7 +140,7 @@ sudo systemctl start wire-pod
 9. Click "Open browser" and finish setting wire-pod up.
 10. Continue on to "Authenticate the bot with wire-pod".
 
-## Guide 4: Android 6.0 and above
+## Guide 4: Android 4.4 and above
 
 - This is still in an early proof-of-concept stage. Though, it is fully featured.
 - Make sure you are using Google Chrome for all of the links.
