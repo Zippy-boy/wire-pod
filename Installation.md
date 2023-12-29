@@ -170,8 +170,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
 2. You should end up at a screen with an "ACTIVATE" button. Click on it.
-    -   If it loads for a little bit then shows back up again, click on it again
-    -   Activation will fail on a raspberry pi unless the hostname of your wire-pod server is changed to "escapepod".
+    -   If it shows an error, wait around 20 seconds and try again. It may take a few tries.
 
 3. Enter the desired settings (can be changed later) then click "SAVE SETTINGS".
 
