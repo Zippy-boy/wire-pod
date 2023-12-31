@@ -31,6 +31,8 @@ sudo hostnamectl set-hostname escapepod
 sudo systemctl restart avahi-daemon
 ```
 
+8. Try toggling some router settings. Google your router model and figure out how to get to the configuration page. Look for settings related to "UPnP", "Multicast", "Zeroconf" (Zero Config), and/or "mDNS" and make sure they are turned on. Also try finding "AP Isolation" and make sure that is turned off.
+
 ## Open an issue
 
 -   If you have an issue apart from these, feel free to open an issue. Note that I do not follow Discussions.
