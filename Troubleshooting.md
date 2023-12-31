@@ -22,18 +22,18 @@ If you have an issue, check here before opening an issue. This page will also co
 
 4. Restart your Vector and the device running wire-pod a few times. mDNS can be finnicky.
 
-5. Wait a minute or so and try again. mDNS broadcasts every 60 seconds, you might just need to wait for that.
+5. Try toggling some router settings. Google your router model and figure out how to get to the configuration page. Look for settings related to "UPnP", "Multicast", "Zeroconf" (Zero Config), and/or "mDNS" and make sure they are turned on. Also try finding "AP Isolation" and make sure that is turned off.
 
-6. Ensure any firewalls are disabled or are allowing traffic between wire-pod and Vector.
+6. Wait a minute or so and try again. mDNS broadcasts every 60 seconds, you might just need to wait for that.
 
-7. If you are running wire-pod on Linux, try:
+7. Ensure any firewalls are disabled or are allowing traffic between wire-pod and Vector.
+
+8. If you are running wire-pod on Linux, try:
 
 ```
 sudo hostnamectl set-hostname escapepod
 sudo systemctl restart avahi-daemon
 ```
-
-8. Try toggling some router settings. Google your router model and figure out how to get to the configuration page. Look for settings related to "UPnP", "Multicast", "Zeroconf" (Zero Config), and/or "mDNS" and make sure they are turned on. Also try finding "AP Isolation" and make sure that is turned off.
 
 ## Open an issue
 
