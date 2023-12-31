@@ -16,7 +16,7 @@ If you have an issue, check here before opening an issue. This page will also co
 
 1. Make sure you don't have an official escape pod running, or any other device with the hostname `escapepod`.
 
-2. Make sure wire-pod is running.
+2. Make sure you are using the latest version of wire-pod. If you are using a prepackaged application (WirePod), download the latest version from the [releases page](https://github.com/kercre123/WirePod/releases/latest).
 
 3. `escapepod.local` must resolve to your wire-pod instance. You can check this by opening a browser on another device on the same network and going to http://escapepod.local:8080
 
