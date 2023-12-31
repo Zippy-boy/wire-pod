@@ -10,7 +10,9 @@ If you have an issue, check here before opening an issue. This page will also co
 
 ## "Error logging in. The bot is likely unable to communicate with your wire-pod instance."
 
--   This error appears on the vector-wirepod-setup page when the bot reports an error communicating with wire-pod. This is a common error and many things could be causing it.
+ - This error appears on the vector-wirepod-setup page when the bot reports an error communicating with wire-pod. This is a common error and many things could be causing it.
+   - ### **Please do not open an issue for this error or send me an email about it, no matter how stuck you are. This error is generally caused by a router being cheap/old/misconfigured, which is outside of wire-pod's control.**
+   - If you are very stuck and have tried every step in this section, consider joining the [Discord](https://discord.gg/NWbPWzhWSk) and posting in the #wirepod-help channel.
 
 1. Make sure you don't have an official escape pod running, or any other device with the hostname `escapepod`.
 
