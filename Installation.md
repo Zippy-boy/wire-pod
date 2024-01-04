@@ -127,7 +127,7 @@ sudo systemctl start wire-pod
 7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
 8. Continue on to "Authenticate the bot with wire-pod".
 
-## Guide 3: macOS 10.10 and above
+## Guide 3: macOS 11 and above
 
 1. Make sure no other wire-pod instances are running on the network.
 2. Make sure no other devices on the network are called `escapepod`.
