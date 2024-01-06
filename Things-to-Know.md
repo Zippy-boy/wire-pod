@@ -53,6 +53,8 @@ Quit WirePod (click the rocket icon in the top bar and click "Quit"), download W
 
 Download WirePod-#.#.#.apk from the [latest release of WirePod](https://github.com/kercre123/WirePod/releases/latest) and install it. No user data will be erased.
 
+***
+
 # Delete wire-pod data
 
 You may need to do this if you are running into issues with a wire-pod update or if a bot keeps deauthenticating.
