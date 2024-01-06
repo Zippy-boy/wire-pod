@@ -29,16 +29,65 @@ sudo ./setup.sh daemon-disable
 
 # Updating wire-pod
 
-To update to a newer version of wire-pod, make sure chipper is not running then run the following commands:
+## Linux
+
+If you have set it up so wire-pod is running as a daemon in the background:
 
 ```
+sudo systemctl stop wire-pod
 cd ~/wire-pod
-sudo git pull
-cd chipper
-sudo ./start.sh
+sudo ./update.sh
+sudo ./setup.sh daemon-enable
+sudo systemctl start wire-pod
 ```
 
-If you have set wire-pod up as a daemon, run `sudo systemctl start wire-pod` rather than `sudo ./start.sh`.
+## Windows
+
+Download WirePodInstaller-v#.#.#.exe from the [latest release of WirePod](https://github.com/kercre123/WirePod/releases/latest) and install. It will automatically update your WirePod installation without erasing any data.
+
+## macOS
+
+Quit WirePod (click the rocket icon in the top bar and click "Quit"), download WirePod-v#.#.#.dmg from the [latest release of WirePod](https://github.com/kercre123/WirePod/releases/latest), mount it, drag WirePod to your Applications folder, allow an overwrite, then launch WirePod from the Applications folder in Finder. No user data will be erased.
+
+## Android
+
+Download WirePod-#.#.#.apk from the [latest release of WirePod](https://github.com/kercre123/WirePod/releases/latest) and install it. No user data will be erased.
+
+# Delete wire-pod data
+
+You may need to do this if you are running into issues with a wire-pod update or if a bot keeps deauthenticating.
+
+## Linux
+
+```
+sudo systemctl stop wire-pod
+cd ~/wire-pod
+sudo rm -f chipper/apiConfig.json
+sudo rm -f chipper/jdocs/*.json
+sudo systemctl start wire-pod
+```
+
+## Windows
+
+1. Go to Settings and find "Apps and Programs".
+2. Find WirePod and uninstall it. The uninstaller will ask you if you want to clear all user data.
+3. Reinstall WirePod per the Installation guide.
+
+## macOS
+
+1. Make sure WirePod isn't running.
+2. In a terminal, run:
+
+```
+rm -rf ~/Library/Application\ Support/wire-pod
+```
+3. Start WirePod again.
+
+## Android
+
+1. Open Settings.
+2. Head to Apps and find WirePod.
+3. Find the option to clear cache and data.
 
 ***
 
