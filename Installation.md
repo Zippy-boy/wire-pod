@@ -28,7 +28,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 1. Put Vector into recovery mode. This can be done by setting him on the charger and holding his button for ~15 seconds. He will turn off. Keep holding until the lights come back on.
     - This is NOT the same as clearing user data. This step will not clear user data.
 
-2. Once he has reached the ***anki.com/v or ddl.io/v screen***, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://vector.techshop82.com/](https://vector.techshop82.com/).
+2. Once he has reached the ***anki.com/v or ddl.io/v screen***, open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [https://wpsetup.keriganc.com/](https://wpsetup.keriganc.com/).
     - If you see an error about Chrome, even though you are running Chrome, enter `chrome://flags` in your URL bar, enable "Enable experimental web platform features", relaunch Chrome, then try again.
     - On many Linux distributions, you may need to open the system's Bluetooth settings menu and have it discovering in the background as you try pairing with vector-wirepod-setup.
         -   BLE support is much more stable in the very modern distros, like Debian bookworm, so you don't need to do this on some
@@ -107,7 +107,7 @@ sudo systemctl start wire-pod
 
 8. If you have an **OSKR or dev bot**, you can set them up with wire-pod via the web configuration interface. In the "Bot Setup" section, look for "Set up OSKR/dev bot", enter the bot's IP address, upload the key, then press set up.
     -  Vector will end up a the blinking V on screen. This is normal. User data was NOT cleared, your bot was just returned to the onboarding status.
-    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://vector.techshop82.com/) to finish setting up the bot.
+    -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://wpsetup.keriganc.com/) to finish setting up the bot.
       -  Note that this site serves multiple purposes. If a bot is in recovery mode, the site will apply an OTA. If the bot has firmware already downloaded, it will enter a different mode and authenticate the bot instead.
 
 9. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
@@ -166,7 +166,7 @@ This is a required step which allows the "Bot Settings" portion in the web app t
 
 ## Authenticate a **production** bot
 
-1. Refresh the [vector-wirepod-setup](https://vector.techshop82.com/) page and follow the instructions
+1. Refresh the [vector-wirepod-setup](https://wpsetup.keriganc.com/) page and follow the instructions
     -   Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
 
 2. You should end up at a screen with an "ACTIVATE" button. Click on it.
