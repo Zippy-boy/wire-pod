@@ -6,7 +6,7 @@ Welcome to the wire-pod wiki!
 
 * [Installation Guide](./Installation)
 
-* [Dev Documentation](./Standards)
+* [Dev Documentation](./For-Developers-and-Tinkerers)
 
 * [More general tips, guides, and info](./Things-to-Know)
 
