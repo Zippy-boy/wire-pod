@@ -40,7 +40,7 @@ func Action(transcribedText string, botSerial string) (string, string) {
 - If you have an NVIDIA GPU and want to accelerate Whisper, also complete the following:
   - On ARM-based (M1>) based Macs, GPU (Metal) acceleration will be enabled by default. The following steps should only be done on Linux.
 
-4. [Install the CUDA toolkit.](https://developer.nvidia.com/cuda-download) and CUDA driver and restart your computer.
+4. [Install the CUDA toolkit and CUDA driver](https://developer.nvidia.com/cuda-downloads) then restart your computer.
 5. Make sure wire-pod isn't running (`systemctl stop wire-pod`) and run:
 
 ```
