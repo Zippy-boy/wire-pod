@@ -8,6 +8,10 @@ Frequently Asked Questions/Frequently Posted Inquiries about Vector.
 
 -   This seems too daunting. Is there an easier solution?
     -   Check out [Dee's WirePod Server](https://techshop82.com/shop/wire-pod-server/).
+    -   If you read the [Installation guide](https://github.com/kercre123/wire-pod/wiki/Installation), you'll also see that there are easy-to-install releases for Windows, macOS, and Android.
+
+-   Do I need my computer on all the time for Vector to be able to listen to my commands?
+    -   Yes.
 
 -   Can I unlock my bot?
     -   At this point, no. You have to pay for an OSKR unlock and DDL has to give it to you. They haven't given one out for a long time.
