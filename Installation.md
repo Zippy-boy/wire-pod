@@ -48,7 +48,7 @@ This is a guide for fully installing wire-pod. Please read every step fully befo
 
 # Installing wire-pod
 
-- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to "Authenticate the bot with wire-pod".
+- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to  ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
 
 ## Guide 1: Linux (and macOS, if you want to build from scratch)
 
@@ -110,7 +110,7 @@ sudo systemctl start wire-pod
     -  AFTER YOU HAVE DONE THIS, use [vector-wirepod-setup](https://wpsetup.keriganc.com/) to finish setting up the bot.
       -  Note that this site serves multiple purposes. If a bot is in recovery mode, the site will apply an OTA. If the bot has firmware already downloaded, it will enter a different mode and authenticate the bot instead.
 
-9. Continue on to "Authenticate the bot with wire-pod", near the bottom of this page.
+9. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod)., near the bottom of this page.
 
 ## Guide 2: Windows 10/11
 
@@ -125,7 +125,7 @@ sudo systemctl start wire-pod
 5. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
 6. Follow the instructions.
 7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
-8. Continue on to "Authenticate the bot with wire-pod".
+8. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod)..
 
 ## Guide 3: macOS 11 and above
 
@@ -138,7 +138,7 @@ sudo systemctl start wire-pod
 7. You will get a popup saying the developer is unidentified. Go to Settings/System Preferences -> Security then click Run Anyway.
 8. Follow the prompts from WirePod.
 9. Click "Open browser" and finish setting wire-pod up.
-10. Continue on to "Authenticate the bot with wire-pod".
+10. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod)..
 
 ## Guide 4: Android 4.4 and above
 
@@ -155,8 +155,9 @@ sudo systemctl start wire-pod
 8. Go to Settings > Apps > WirePod. Make sure "Battery" is set to "Unoptimized" or "Not optimizied". If this setting doesn't exist, you can skip this step.
 9. Open WirePod and select "Start".
 10. Go to the URL under "WirePod Control" in the device browser and finish setting WirePod up.
-  -  The "with specific grammer?" checkbox removes some words from the speech model. This speeds up speech recognition, but means the robot will only understand the words he needs to understand. So you can't directly ask "what's the meaning of life?" or something like that. The intent-graph feature would be disabled. It is recommended you don't check this, but you can check it if you want better performance.
-11. Continue on to "Authenticate the bot with wire-pod".
+  -  The "with specific grammer?" checkbox removes some words from the speech model. This speeds up speech recognition, but means the robot will only understand the words he needs to understand. So you can't directly ask "what's the meaning of life?" or something like that. Only words in commands (like "how are you?") would be recognized correctly. It is recommended you don't check this, but you can check it if you want better performance. It is especially recommended if you are running WirePod on very old (Android KitKat-era) devices.
+  -  **If you are setting WirePod up with an unlocked robot,** you must chosoe a port above 1024. The default port (443) will not work because Android doesn't allow binding to privileged ports (ports below 1024).
+11. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
 
 # Authenticate the bot with wire-pod
 
