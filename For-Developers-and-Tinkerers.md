@@ -11,7 +11,7 @@ package main
 
 var Utterances = []string{"hello world", ...}
 var Name = "Example"
-func Action(transcribedText string, botSerial string) (string, string) {
+func Action(transcribedText, botSerial, guid, target string) (string, string) {
     // first string: intent
     // second string: spoken text
     return "intent_imperative_praise", ""
@@ -22,9 +22,23 @@ func Action(transcribedText string, botSerial string) (string, string) {
 
 - If the second returned string isn't blank, Vector will speak the string that is put in there rather than perform the intent in the first string.
 
-- You can use github.com/fforchino/vector-go-sdk if you want to use the SDK in your plugin.
+- If both are blank, the command will be handled by the normal text-to-intent processor (as if the plugin isn't there at all).
 
-- You must compile this with `/usr/local/go/bin/go build -buildmode=plugin -o ~/wire-pod/chipper/plugins/example.so example.go`, on the same machine WirePod is running on. To get WirePod to load the plugin, you must restart wire-pod (`sudo systemctl restart wire-pod`). To reduce the filesize of the plugin, you can add `-ldflags "-w -s"`.
+- You can make it so every command goes through the plugin if you use `var Utterances = []string{"*"}`
+
+- You can use github.com/fforchino/vector-go-sdk if you want to use the SDK in your plugin.
+  - The sdk_wrapper does not work nicely in wire-pod at the moment. You will have to use the `vector` and `vectorpb` packages.
+  - To initiate a connection with Vector, you should do:
+
+```
+	robot, err := vector.New(
+		vector.WithSerialNo(botSerial),
+		vector.WithTarget(target),
+		vector.WithToken(guid),
+	)
+```
+
+- You must compile this with `sudo /usr/local/go/bin/go build -buildmode=plugin -o ~/wire-pod/chipper/plugins/example.so example.go`, on the same machine WirePod is running on. To get WirePod to load the plugin, you must restart wire-pod (`sudo systemctl restart wire-pod`). To reduce the filesize of the plugin, you can add `-ldflags "-w -s"`.
 
 # Setup WirePod with OpenAI's Whisper
 
