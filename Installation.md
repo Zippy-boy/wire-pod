@@ -161,16 +161,16 @@ sudo systemctl start wire-pod
 
 ## Guide 5: Docker compose
 
-1. On the device you would like to install wire*pod on, make sure you have docker installed. This can be done with the command `sudo apt install docker*ce` for linux.
+1. On the device you would like to install wire-pod on, make sure you have docker installed. This can be done with the command `sudo apt install docker-ce` for linux.
 2. Verify if the docker engine is working with the command `sudo service docker status`
-3. Run this command to create and download the wire*pod application
+3. Run this command to create and download the wire-pod application
 
 ```
-docker compose up *d *f https://raw.githubusercontent.com/kercre123/wire*pod/main/compose.yaml
+docker compose up -d -f https://raw.githubusercontent.com/kercre123/wire-pod/main/compose.yaml
 ```
 
-4. With a device on the same network as wire*pod, open a browser and head to the configuration page. <http://YOUR_IP:8080>. In that page, follow the instructions. Wire*pod should then be set up!
-5. Continue on to ["Authenticate the bot with wire*pod"](#authenticate*the*bot*with*wire*pod), near the bottom of this page.
+4. With a device on the same network as wire-pod, open a browser and head to the configuration page. <http://YOUR_IP:8080>. In that page, follow the instructions. Wire-pod should then be set up!
+5. Continue on to ["Authenticate the bot with wire-pod"](#authenticate-the-bot-with-wire-pod), near the bottom of this page.
 
 # Authenticate the bot with wire-pod
 
